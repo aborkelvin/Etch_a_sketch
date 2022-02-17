@@ -1,0 +1,15 @@
+.blocks{
+    color: black;
+}
+.hovered{
+    background-color: orchid;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+#div1{
+    background-color: purple;
+}
