@@ -1,8 +1,6 @@
 const container = document.querySelector('.container');
 const butt = document.querySelector('.butt');
 
-
-
 function gridbox(sqrs,col,row) { //Creates the required number of divs and styles into appropriate gridboxes
     for (let i = 0; i<sqrs; i++) {
     const div = document.createElement('div');
@@ -14,9 +12,8 @@ function gridbox(sqrs,col,row) { //Creates the required number of divs and style
     container.style.gridTemplateRows = `repeat(${row},1fr)`;
     }
 }
+
 gridbox(256,16,16);
-
-
 
 function eve() { //listens for mouse any div(gridbox) and changes the class to indicate color change
     function change(x){
@@ -30,10 +27,6 @@ function eve() { //listens for mouse any div(gridbox) and changes the class to i
         may.addEventListener('mouseover',function(){change(i);})
     }
 }
-
-
-
-
 
 
 function stop() {// takes user desired grids,clears the previous grid and calls the div creator function with the user input as parameters
@@ -52,16 +45,6 @@ function stop() {// takes user desired grids,clears the previous grid and calls 
     }
     gridbox(input,side,side);
 }
-
-
-
-
-
-
-
-
-
-
 
 container.addEventListener('mouseover',eve); //listens for any movement over the container div and calls the functions
 butt.addEventListener('click',stop); 
