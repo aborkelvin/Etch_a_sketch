@@ -17,8 +17,6 @@ h1{
     width: 70vw;
     height: 70vh;
     display: grid;
-    /*grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);*/
     position: absolute;top: 18vh; left: 15vw;
 }
  .butt{
